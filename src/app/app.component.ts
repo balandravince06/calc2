@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calc2';
+  title = 'Calculator';
+
+  firstNo!: string;
+  secondNo!: string;
+  result!: number;
+
+  add(){
+    this.result = parseInt(this.firstNo) + parseInt(this.secondNo)
+  }
+  subtract(){
+    this.result = parseInt(this.firstNo) - parseInt(this.secondNo)
+  }
+  multiply(){
+    this.result = parseInt(this.firstNo) * parseInt(this.secondNo)
+  }
+  divide(){
+    this.result = parseInt(this.firstNo) / parseInt(this.secondNo)
+  }
 }
